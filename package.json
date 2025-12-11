@@ -1,0 +1,19 @@
+{
+  "name": "westergarage",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.4.1"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "sass": "^1.96.0",
+    "tailwindcss": "^4.0.0"
+  }
+}

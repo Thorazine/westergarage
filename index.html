@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Westergarage | Persoonlijke Service van Jan</title>
+        <meta
+            name="description"
+            content="Westergarage - Uw lokale garage voor APK, reparaties, bandenwissel en RDW. Persoonlijke service van Jan."
+        />
+        <meta
+            name="keywords"
+            content="garage, apk, auto reparatie, bandenwissel, RDW, westergarage, jan"
+        />
+        <!-- Open Graph -->
+        <meta
+            property="og:title"
+            content="Westergarage | Persoonlijke Service"
+        />
+        <meta
+            property="og:description"
+            content="Westergarage - Uw lokale garage voor APK, reparaties, bandenwissel en RDW. Persoonlijke service van Jan."
+        />
+        <meta property="og:type" content="website" />
+    </head>
+    <body class="bg-brand-secondary text-brand-dark">
+
+        <!-- Semantic Structure which will be populated or handled by Vue/React if used, but here we act on #app or direct in body if purely static. 
+         Since we are using Vite Vanilla, we can put content directly here or inject via main.js. 
+         For a simple site, direct HTML here is easier and better for SEO than JS injection.
+    -->
+
+        <header class="bg-white shadow-md sticky top-0 z-50">
+            <nav
+                class="container mx-auto px-4 py-4 flex justify-between items-center"
+            >
+                <a
+                    href="#"
+                    class="text-2xl font-bold text-brand-primary fun-heading"
+                    >Westergarage</a
+                >
+                <ul class="hidden md:flex space-x-6">
+                    <li>
+                        <a
+                            href="#services"
+                            class="hover:text-brand-primary transition"
+                            >Diensten</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#contact"
+                            class="hover:text-brand-primary transition"
+                            >Contact</a
+                        >
+                    </li>
+                </ul>
+                <a
+                    href="tel:+31622904667"
+                    class="bg-brand-primary text-white px-4 py-2 font-bold hover:bg-red-700 transition uppercase tracking-wider"
+                >
+                    Bel Jan
+                </a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero -->
+            <section class="relative hero-pattern text-white py-20 lg:py-32 overflow-hidden">
+                <div class="container mx-auto px-4 text-center relative z-10">
+                    <h1 class="text-5xl md:text-7xl font-bold mb-6 fun-heading drop-shadow-md">
+                        Welkom bij Westergarage
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto font-light">
+                        Uw auto in goede handen. Ervaar de persoonlijke service
+                        van Jan.
+                    </p>
+                    <a
+                        href="#contact"
+                        class="inline-block bg-brand-primary text-white px-8 py-4 text-xl font-bold hover:bg-red-600 hover:scale-105 shadow-xl border-2 border-white/20 uppercase tracking-widest"
+                    >
+                        Maak een afspraak
+                    </a>
+                </div>
+                <!-- Decorative circles -->
+                 <div class="absolute top-10 left-10 w-32 h-32 bg-brand-primary rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+                 <div class="absolute top-10 right-10 w-32 h-32 bg-brand-accent rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+            </section>
+
+            <!-- About / USP -->
+            <section class="py-16 bg-white relative">
+                <div class="container mx-auto px-4 text-center">
+                    <h2
+                        class="text-4xl font-bold mb-8 text-brand-dark fun-heading"
+                    >
+                        Waarom Westergarage?
+                    </h2>
+                    <div class="max-w-3xl mx-auto bg-brand-secondary p-8 shadow-lg border-l-4 border-brand-primary">
+                        <p class="text-xl leading-relaxed text-brand-dark">
+                            Bij Westergarage bent u geen nummer.
+                            <strong class="text-brand-primary">Jan</strong> staat voor u klaar met eerlijk
+                            advies en vakmanschap. Of het nu gaat om een APK,
+                            een kleine beurt of complexe reparaties, u krijgt
+                            altijd de persoonlijke aandacht die uw auto
+                            verdient.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services -->
+            <section id="services" class="py-16 bg-brand-secondary">
+                <div class="container mx-auto px-4">
+                    <h2
+                        class="text-4xl font-bold mb-12 text-center text-brand-dark fun-heading"
+                    >
+                        Onze Diensten
+                    </h2>
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+                    >
+                        <!-- Service 1 -->
+                        <div
+                            class="service-card bg-white p-6 transition transform"
+                        >
+                            <div class="text-6xl mb-4 text-center">
+                                🛠️
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3 text-center text-brand-dark fun-heading">
+                                APK Keuringen
+                            </h3>
+                            <p class="text-gray-600 text-center">
+                                Snel en vakkundig uw auto gekeurd zodat u weer
+                                veilig de weg op kunt.
+                            </p>
+                        </div>
+                        <!-- Service 2 -->
+                        <div
+                            class="service-card bg-white p-6 transition transform"
+                        >
+                            <div class="text-6xl mb-4 text-center">
+                                🔧
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3 text-center text-brand-dark fun-heading">
+                                Onderhoud & Reparatie
+                            </h3>
+                            <p class="text-gray-600 text-center">
+                                Van kleine beurt tot grote reparaties. Wij
+                                lossen het voor u op.
+                            </p>
+                        </div>
+                        <!-- Service 3 -->
+                        <div
+                            class="service-card bg-white p-6 transition transform"
+                        >
+                            <div class="text-6xl mb-4 text-center">
+                                🛞
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3 text-center text-brand-dark fun-heading">
+                                Bandenwissel
+                            </h3>
+                            <p class="text-gray-600 text-center">
+                                Zomer- en winterbanden vakkundig gewisseld en
+                                gebalanceerd.
+                            </p>
+                        </div>
+                        <!-- Service 4 -->
+                        <div
+                            class="service-card bg-white p-6 transition transform"
+                        >
+                            <div class="text-6xl mb-4 text-center">
+                                📄
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3 text-center text-brand-dark fun-heading">
+                                RDW Overschrijvingen
+                            </h3>
+                            <p class="text-gray-600 text-center">
+                                Direct uw kenteken overschrijven of vrijwaren op
+                                locatie.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact & Form -->
+            <section id="contact" class="py-16 bg-white">
+                <div class="container mx-auto px-4">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <!-- Contact Info -->
+                        <div>
+                            <h2
+                                class="text-3xl font-bold mb-6 text-brand-dark fun-heading"
+                            >
+                                Contact
+                            </h2>
+                            <p class="mb-6 text-lg">
+                                Heeft u een vraag of wilt u een afspraak maken?
+                                Bel, mail of kom langs!
+                            </p>
+
+                            <div class="space-y-4">
+                                <div
+                                    class="flex items-start bg-brand-secondary p-4 rounded-lg"
+                                >
+                                    <span
+                                        class="text-brand-primary text-2xl mr-4"
+                                        >📍</span
+                                    >
+                                    <div>
+                                        <h4 class="font-bold">Adres</h4>
+                                        <p>
+                                            Spoorlaan 39C<br />3645 EE, Vinkeveen
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="flex items-start bg-brand-secondary p-4 rounded-lg"
+                                >
+                                    <span
+                                        class="text-brand-primary text-2xl mr-4"
+                                        >📞</span
+                                    >
+                                    <div>
+                                        <h4 class="font-bold">Telefoon</h4>
+                                        <a
+                                            href="tel:+31622904667"
+                                            class="text-brand-primary font-bold hover:underline"
+                                            >06 2290 4667</a
+                                        >
+                                        <p class="text-sm text-gray-500">
+                                            Vraag naar Jan
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="flex items-start bg-brand-secondary p-4 rounded-lg"
+                                >
+                                    <span
+                                        class="text-brand-primary text-2xl mr-4"
+                                        >✉️</span
+                                    >
+                                    <div>
+                                        <h4 class="font-bold">Email</h4>
+                                        <a
+                                            href="mailto:info@westergarage.nl"
+                                            class="text-brand-primary hover:underline"
+                                            >info@westergarage.nl</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Form -->
+                        <div
+                            class="bg-brand-secondary p-8 shadow-inner border-t-4 border-brand-primary"
+                        >
+                            <h3 class="text-2xl font-bold mb-6 fun-heading">
+                                Stuur een bericht
+                            </h3>
+                            <form
+                                action="mailto:info@westergarage.nl"
+                                method="GET"
+                                enctype="text/plain"
+                                class="space-y-4"
+                            >
+                                <div>
+                                    <label
+                                        for="subject"
+                                        class="block text-sm font-bold mb-1"
+                                        >Onderwerp</label
+                                    >
+                                    <input
+                                        type="text"
+                                        name="subject"
+                                        id="subject"
+                                        class="w-full px-4 py-2 border-2 border-gray-300 focus:border-brand-primary focus:ring-0 outline-none transition bg-white"
+                                        placeholder="Bijv. APK Afspraak"
+                                    />
+                                </div>
+
+                                <div>
+                                    <label
+                                        for="body"
+                                        class="block text-sm font-bold mb-1"
+                                        >Uw Vraag</label
+                                    >
+                                    <textarea
+                                        name="body"
+                                        id="body"
+                                        rows="4"
+                                        class="w-full px-4 py-2 border-2 border-gray-300 focus:border-brand-primary focus:ring-0 outline-none transition bg-white"
+                                        placeholder="Hoe kunnen we u helpen?"
+                                    ></textarea>
+                                </div>
+
+                                <button
+                                    type="submit"
+                                    class="w-full bg-brand-primary text-white font-bold py-3 hover:bg-red-700 transition shadow-md uppercase tracking-wider"
+                                >
+                                    Verstuur Bericht
+                                </button>
+                                <p
+                                    class="text-xs text-gray-500 text-center mt-2"
+                                >
+                                    Dit opent uw mailprogramma.
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-brand-dark text-white py-8">
+            <div class="container mx-auto px-4 text-center">
+                <p>&copy; 2025 Westergarage. Alle rechten voorbehouden.</p>
+                <p class="text-sm text-gray-400 mt-2">
+                    Gemaakt met ❤️ en bandenvet.
+                </p>
+            </div>
+        </footer>
+
+        <script type="module" src="/src/main.js"></script>
+    </body>
+</html>

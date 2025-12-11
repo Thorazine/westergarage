@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Russo One", sans-serif;
+  
+  --color-brand-primary: #d90429; /* Bolder Red */
+  --color-brand-secondary: #edf2f4; /* Clean White/Grey */
+  --color-brand-dark: #2b2d42; /* Dark Blue/Grey */
+  --color-brand-accent: #8d99ae; /* Industrial Grey */
+}
+
+/* Utility Classes manual overrides for stability */
+.text-brand-primary { color: var(--color-brand-primary); }
+.text-brand-secondary { color: var(--color-brand-secondary); }
+.text-brand-dark { color: var(--color-brand-dark); }
+
+.bg-brand-primary { background-color: var(--color-brand-primary); }
+.bg-brand-secondary { background-color: var(--color-brand-secondary); }
+.bg-brand-dark { background-color: var(--color-brand-dark); }
+.bg-brand-accent { background-color: var(--color-brand-accent); }
+
+.border-brand-primary { border-color: var(--color-brand-primary); }
+
+/* Custom "Bold" Styling */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-secondary);
+  color: var(--color-brand-dark);
+}
+
+.fun-heading {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Industrial / Tough Interactions */
+a, button {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hero Section */
+.hero-pattern {
+  background-color: var(--color-brand-dark);
+  background-image: 
+    linear-gradient(30deg, #373950 12%, transparent 12.5%, transparent 87%, #373950 87.5%, #373950),
+    linear-gradient(150deg, #373950 12%, transparent 12.5%, transparent 87%, #373950 87.5%, #373950),
+    linear-gradient(30deg, #373950 12%, transparent 12.5%, transparent 87%, #373950 87.5%, #373950),
+    linear-gradient(150deg, #373950 12%, transparent 12.5%, transparent 87%, #373950 87.5%, #373950),
+    linear-gradient(60deg, #37395077 25%, transparent 25.5%, transparent 75%, #37395077 75%, #37395077),
+    linear-gradient(60deg, #37395077 25%, transparent 25.5%, transparent 75%, #37395077 75%, #37395077);
+  background-size: 40px 70px;
+  background-position: 0 0, 0 0, 20px 35px, 20px 35px, 0 0, 20px 35px;
+}
+
+/* Service Cards - Blocky and Tough */
+.service-card {
+  border: 2px solid var(--color-brand-dark);
+  box-shadow: 4px 4px 0px var(--color-brand-primary);
+  border-radius: 0; /* Square edges */
+}
+
+.service-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--color-brand-primary);
+}
